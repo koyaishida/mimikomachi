@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import React from "react";
 import Style from "../styles/access.module.css";
+import ENV from "../env.json";
 import {
   withScriptjs,
   withGoogleMap,
@@ -22,6 +23,8 @@ const RegularMap = withScriptjs(
   ))
 );
 
+const API_KEY = ENV.API_KEY;
+
 export default function Access() {
   return (
     <Layout>
@@ -31,7 +34,8 @@ export default function Access() {
         <p>日野保育園のすぐ近くです！</p>
         <div className={Style.map}>
           <RegularMap
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6-F61vY8mPw4QP6GGh8VMRWo5AO5XN7w"
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}`}
+            // googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCkXz2dk6bRiUhUE4qrZyJsQ1MOBcr8OWc`}
             loadingElement={<div style={{ height: "100%" }} />}
             containerElement={<div style={{ height: "400px" }} />}
             mapElement={<div style={{ height: "100%" }} />}
