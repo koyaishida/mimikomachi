@@ -1,0 +1,15 @@
+.wrap {
+  width: 100%;
+}
+.imageWrap {
+  position: relative;
+}
+@media (max-width: 960px) {
+  .imageWrap {
+    width: 100%;
+  }
+}
+
+.text {
+  padding: 30px;
+}

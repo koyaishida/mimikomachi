@@ -1,0 +1,51 @@
+.listContainer {
+  background-color: #ffffff;
+  border-radius: 1%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+.listContainer h4 {
+  background-color: #d95a2c;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.scroll {
+  overflow: scroll;
+  height: 500px;
+}
+.border {
+  margin: 10px auto;
+  border-top: 1px solid black;
+  width: 95%;
+}
+.listItem {
+  text-decoration: none;
+  width: 95%;
+  text-align: center;
+}
+.listItem p {
+  margin: 5px;
+}
+.listItem a {
+  background-color: aqua;
+}
+.blogTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-left: 20px;
+}
+@media (max-width: 600px) {
+  .listContainer {
+    height: 300px;
+  }
+  .listContainer h4 {
+    height: 30px;
+    line-height: 30px;
+  }
+}
