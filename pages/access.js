@@ -26,8 +26,6 @@ const RegularMap = withScriptjs(
   ))
 );
 
-const API_KEY = ENV.API_KEY;
-
 export default function Access() {
   return (
     <Layout>
