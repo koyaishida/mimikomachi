@@ -12,15 +12,19 @@ export default function About({ blogData }) {
         <ul className={Style.listContainer}>
           <h4>店長ブログ</h4>
           <div className={Style.scroll}>
-            {blogData.map((blog, index) => (
-              <li key={index} className={Style.listItem}>
-                <a href={blog.link}>
-                  <p>{blog.pubDate.split("T")[0]}</p>
-                  <p className={Style.blogTitle}>{blog.title}</p>
-                </a>
-                <p className={Style.border}></p>
-              </li>
-            ))}
+            {blogData.length > 0 ? (
+              blogData.map((blog, index) => (
+                <li key={index} className={Style.listItem}>
+                  <a href={blog.link}>
+                    <p>{blog.pubDate.split("T")[0]}</p>
+                    <p className={Style.blogTitle}>{blog.title}</p>
+                  </a>
+                  <p className={Style.border}></p>
+                </li>
+              ))
+            ) : (
+              <p>ブログが見つかりません。</p>
+            )}
           </div>
         </ul>
       </div>
@@ -29,8 +33,7 @@ export default function About({ blogData }) {
 }
 
 export async function getStaticProps() {
-  // const url = "https://mimikomachi.hatenablog.com/feed";
-  const url = "https://aji56.hatenablog.com/feed";
+  const url = "https://mimikomachi.hatenablog.com/feed";
   const rssParser = new RssParser();
   let blogData = [];
   await rssParser.parseURL(url).then((feed) => {

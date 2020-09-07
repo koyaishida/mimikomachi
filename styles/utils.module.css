@@ -4,6 +4,9 @@
 .imageWrap {
   position: relative;
 }
+.flex {
+  display: flex;
+}
 @media (max-width: 960px) {
   .imageWrap {
     width: 100%;
