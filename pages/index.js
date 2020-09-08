@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <div className={utilStyles.flex}>
             <p>・</p>
-            <p>反社会的勢力と関わりのあるかたは入店できません。</p>
+            <p>反社会的勢力と関わりのある方は入店できません。</p>
           </div>
           <div className={utilStyles.flex}>
             <p>・</p>
