@@ -9,7 +9,6 @@ import {
 } from "react-google-maps";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-console.log(API_KEY, "API!");
 
 const RegularMap = withScriptjs(
   withGoogleMap(() => (
@@ -26,8 +25,6 @@ const RegularMap = withScriptjs(
 );
 
 export default function Access() {
-  console.log(API_KEY, "API2");
-
   return (
     <Layout>
       <div>
