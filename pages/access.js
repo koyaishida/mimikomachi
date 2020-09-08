@@ -9,7 +9,7 @@ import {
 } from "react-google-maps";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-console.log(API_KEY, "API");
+console.log(API_KEY, "API!");
 
 const RegularMap = withScriptjs(
   withGoogleMap(() => (
