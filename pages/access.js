@@ -33,7 +33,8 @@ export default function Access() {
         <p>日野保育園のすぐ近くです！</p>
         <div className={Style.map}>
           <RegularMap
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}`}
+            // googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_API_KEY}`}
             loadingElement={<div style={{ height: "100%" }} />}
             containerElement={<div style={{ height: "400px" }} />}
             mapElement={<div style={{ height: "100%" }} />}
