@@ -8,8 +8,6 @@ import {
   Marker,
 } from "react-google-maps";
 
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-
 const RegularMap = withScriptjs(
   withGoogleMap(() => (
     <GoogleMap
