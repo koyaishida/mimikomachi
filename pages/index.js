@@ -11,7 +11,7 @@ export default function Home() {
       <section className={utilStyles.wrap}>
         <h2>システム・料金のご案内</h2>
         <p>御来店の際は、事前にご予約をお願い致します。</p>
-        <p>※ 当店は風俗店では御座いません。</p>
+        <p>※ 当店は風俗店でも治療院でも御座いません。</p>
         <div className={utilStyles.imageWrap}>
           <img src="./images/menu.jpeg" className={utilStyles.image} />
         </div>

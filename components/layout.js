@@ -52,6 +52,7 @@ const Layout = ({ children, home }) => {
       <main>{children}</main>
       <footer className={styles.footer}>
         <h5>営業時間：平日１８時〜２２時（最終受付）</h5>
+        <h5>営業時間：土日祝１８時〜２２時（最終受付）</h5>
         <h5>定休日：不定休</h5>
         <h5>住所：岐阜県岐阜市日野西３丁目３ー１６</h5>
         <h5>連作先：０８０-７５３０-２１４５</h5>
