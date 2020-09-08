@@ -8,7 +8,8 @@ import {
   Marker,
 } from "react-google-maps";
 
-// const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+console.log(API_KEY, "API");
 
 const RegularMap = withScriptjs(
   withGoogleMap(() => (
@@ -25,6 +26,9 @@ const RegularMap = withScriptjs(
 );
 
 export default function Access() {
+  // const KEY = "AIzaSyA98MzzMnilPUYaIzO_ClNktSOHfO1TUzE";
+  console.log(API_KEY, "API2");
+
   return (
     <Layout>
       <div>
@@ -33,7 +37,9 @@ export default function Access() {
         <p>日野保育園のすぐ近くです！</p>
         <div className={Style.map}>
           <RegularMap
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_API_KEY}`}
+            //googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${KEY}`}
+            // googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyA98MzzMnilPUYaIzO_ClNktSOHfO1TUzE`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}`}
             loadingElement={<div style={{ height: "100%" }} />}
             containerElement={<div style={{ height: "400px" }} />}
             mapElement={<div style={{ height: "100%" }} />}
