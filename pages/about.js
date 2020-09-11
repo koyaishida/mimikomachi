@@ -40,7 +40,6 @@ export async function getStaticProps() {
   await rssParser.parseURL(url).then((feed) => {
     blogData = feed.items;
   });
-  console.log(blogData);
   return {
     props: {
       blogData,
