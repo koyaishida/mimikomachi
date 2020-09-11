@@ -32,19 +32,6 @@ export default function About({ blogData }) {
   );
 }
 
-// About.getInitialProps = async () => {
-//   const url = "https://mimikomachi.hatenablog.com/feed";
-//   const rssParser = new RssParser();
-//   let blogData = [];
-//   await rssParser.parseURL(url).then((feed) => {
-//     blogData = feed.items;
-//   });
-
-//   return {
-//     blogData,
-//   };
-// };
-
 export async function getStaticProps() {
   const url = "https://mimikomachi.hatenablog.com/feed";
   const rssParser = new RssParser();
@@ -58,6 +45,6 @@ export async function getStaticProps() {
     props: {
       blogData,
     },
-    unstable_revalidate: 1,
+    revalidate: 1,
   };
 }
