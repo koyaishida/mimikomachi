@@ -32,7 +32,7 @@ export default function About({ blogData }) {
   );
 }
 
-export async function getStaticProps() {
+About.getInitialProps = async () => {
   const url = "https://mimikomachi.hatenablog.com/feed";
   const rssParser = new RssParser();
   let blogData = [];
@@ -41,8 +41,21 @@ export async function getStaticProps() {
   });
 
   return {
-    props: {
-      blogData,
-    },
+    blogData,
   };
-}
+};
+
+// export async function getStaticProps() {
+//   const url = "https://mimikomachi.hatenablog.com/feed";
+//   const rssParser = new RssParser();
+//   let blogData = [];
+//   await rssParser.parseURL(url).then((feed) => {
+//     blogData = feed.items;
+//   });
+
+//   return {
+//     props: {
+//       blogData,
+//     },
+//   };
+// }
