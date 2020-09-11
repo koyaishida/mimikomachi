@@ -21,18 +21,21 @@
   margin: 10px auto;
   border-top: 1px solid black;
   width: 95%;
+  text-align: center;
 }
 .listItem {
   text-decoration: none;
   width: 95%;
   text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
 }
+
 .listItem p {
   margin: 5px;
+  text-decoration: none;
 }
-.listItem a {
-  background-color: aqua;
-}
+
 .blogTitle {
   overflow: hidden;
   white-space: nowrap;
