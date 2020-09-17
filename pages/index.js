@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>みみ小町</title>
       </Head>
       <section className={utilStyles.wrap}>
         <h2>システム・料金のご案内</h2>
