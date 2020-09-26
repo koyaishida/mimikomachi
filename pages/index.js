@@ -6,7 +6,17 @@ export default function Home() {
   return (
     <Layout home>
       <Head>
+        <meta
+          name="google-site-verification"
+          content="6GyFLmyYeEqKij9Cyb9NOG1LKf0hDWftc7uf6Q7VGQw"
+        />
         <title>みみ小町</title>
+        <meta
+          name="description"
+          content="みみ小町は岐阜県で唯一の耳かき専門店です。耳かきとハンドリフレを中心に究極の癒しをご堪能頂けます。"
+        />
+        <meta name="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <section className={utilStyles.wrap}>
         <h2>システム・料金のご案内</h2>

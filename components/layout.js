@@ -17,6 +17,10 @@ const Layout = ({ children, home }) => {
       <Head>
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <meta
+          name="google-site-verification"
+          content="6GyFLmyYeEqKij9Cyb9NOG1LKf0hDWftc7uf6Q7VGQw"
+        />
+        <meta
           name="description"
           content="みみ小町は岐阜県で唯一の耳かき専門店です。耳かきとハンドリフレを中心に究極の癒しをご堪能頂けます。"
         />
