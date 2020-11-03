@@ -23,7 +23,7 @@ export default function Home() {
         <p>御来店の際は、事前にご予約をお願い致します。</p>
         <p>※ 当店は風俗店でも治療院でも御座いません。</p>
         <div className={utilStyles.imageWrap}>
-          <img src="./images/menu.jpeg" className={utilStyles.image} />
+          <img src="./images/menu2.png" className={utilStyles.image} />
         </div>
         <div>
           <h4>注意事項・規約</h4>
